@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "prebuild": "tsx scripts/validate-extend-apps-directory.ts",
-    "build": "yarn prebuild && react-router build",
-    "dev": "react-router dev",
+    "build": "yarn prebuild && NODE_ENV=production react-router build",
+    "dev": "NODE_ENV=development react-router dev",
     "start": "http-server build/client",
     "typecheck": "react-router typegen && tsc"
   },

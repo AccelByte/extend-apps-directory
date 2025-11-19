@@ -3,33 +3,33 @@
     "id": "f88c8043680b49538764f2cca4bf7a27",
     "imageUrl": "/extend-apps-explorer/vivox.png",
     "title": "Vivox Authorization Service",
-    "description": "A Vivox authentication service is essential for integrating AccelByte Gaming Services (AGS), Vivox, and game clients. It generates the signed Vivox token that game clients need to interact with Vivox. This token is valid for 90 seconds, so game clients must regularly call the service to obtain a new token.",
+    "description": "Integrate Vivox voice chat into your game with the Vivox Authorization Service. This essential service facilitates secure communication between AccelByte Gaming Services (AGS), Vivox, and your game clients by generating and managing short-lived (90-second) Vivox tokens. Ensure continuous, authenticated voice communication for your players by integrating this robust solution.",
     "creator": "AccelByte",
     "repositories": [
       {
         "title": "Vivox Authorization Service - Go",
-        "description": "Vivox authorization service implemented in Go",
+        "description": "Vivox authorization service template implemented in Go, providing secure token generation and seamless integration with AccelByte Gaming Services.",
         "url": "https://github.com/AccelByte/extend-vivox-authorization-service-go",
         "language": "Go",
         "type": "service-extension"
       },
       {
         "title": "Vivox Authorization Service - C#",
-        "description": "Vivox authorization service implemented in C#",
+        "description": "Vivox authorization service template implemented in C#, providing secure token generation and seamless integration with AccelByte Gaming Services.",
         "url": "https://github.com/AccelByte/extend-vivox-authorization-service-csharp",
         "language": "C#",
         "type": "service-extension"
       },
       {
         "title": "Vivox Authorization Service - Java",
-        "description": "Vivox authorization service implemented in Java",
+        "description": "Vivox authorization service template implemented in Java, providing secure token generation and seamless integration with AccelByte Gaming Services.",
         "url": "https://github.com/AccelByte/extend-vivox-authorization-service-java",
         "language": "Java",
         "type": "service-extension"
       },
       {
         "title": "Vivox Authorization Service - Python",
-        "description": "Vivox authorization service implemented in Python",
+        "description": "Vivox authorization service template implemented in Python, providing secure token generation and seamless integration with AccelByte Gaming Services.",
         "url": "https://github.com/AccelByte/extend-vivox-authorization-service-python",
         "language": "Python",
         "type": "service-extension"
@@ -40,12 +40,12 @@
     "id": "f680a8a5badb485490dfb91e6fee1f07",
     "imageUrl": "/extend-apps-explorer/rank_suite.svg",
     "title": "Rank Suite",
-    "description": "A comprehensive tiered weekly player ranking system for AccelByte Gaming Services (AGS) that manages MMR-based player rankings with real-time updates and weekly evaluations.",
+    "description": "Elevate competitive play with the Rank Suite, a comprehensive, tiered weekly player ranking system for AccelByte Gaming Services (AGS). It manages MMR-based player rankings, offering real-time updates and consistent weekly evaluations to foster a dynamic and engaging competitive environment.",
     "creator": "AccelByte",
     "repositories": [
       {
         "title": "Extend Rank Suite",
-        "description": "Extend Rank Suite service implemented in Go with 3 services",
+        "description": "The core Extend Rank Suite service, implemented in Go, comprising three integrated services to power advanced MMR-based player ranking functionalities within AccelByte Gaming Services.",
         "url": "https://github.com/accelbyte/extend-rank-suite",
         "language": "Shell",
         "appRecommendedResource": {
@@ -59,12 +59,12 @@
     "id": "b8c86f553cb048198857a4b9ffb3baa5",
     "imageUrl": "/extend-apps-explorer/core_matchmaker.svg",
     "title": "Core Matchmaker",
-    "description": "Extend Override app designed to customize the matchmaking function. It includes a gRPC server implementation with built-in security (authentication/authorization), observability (metrics, traces, logs), and a sample implementation for matching two players.",
+    "description": "Gain precise control over your game's player pairing with the Core Matchmaker, an Extend Override application designed for customizing matchmaking functions. This solution features a gRPC server with integrated security (authentication/authorization), comprehensive observability (metrics, traces, logs), and a foundational sample implementation to efficiently match two players, ensuring optimal game experiences.",
     "creator": "AccelByte",
     "repositories": [
       {
         "title": "Extend Core Matchmaker",
-        "description": "Extend Override Core Matchmaker service implemented in Go",
+        "description": "The Core Matchmaker service, implemented in Go, provides a powerful Extend Override solution for customizing game matchmaking, complete with built-in security and observability features.",
         "url": "https://github.com/AccelByte/extend-core-matchmaker",
         "language": "Go",
         "type": "override"
@@ -75,39 +75,39 @@
     "id": "597959727676439385b0cc49f8ca1e86",
     "imageUrl": "/extend-apps-explorer/challenge_suite.svg",
     "title": "Challenge Suite",
-    "description": "The Challenge Suite enables game developers to implement daily missions, seasonal events, quests, and achievements through simple JSON configuration - no custom backend code required. The system integrates seamlessly with AccelByte Gaming Services (AGS) for authentication, event processing, and reward distribution.",
+    "description": "Empower your game with dynamic engagement using the Challenge Suite. This solution allows game developers to implement daily missions, seasonal events, quests, and achievements via simple JSON configuration, eliminating the need for custom backend code. It integrates with AccelByte Gaming Services (AGS) for secure authentication, efficient event processing, and streamlined reward distribution, enhancing player retention and experience.",
     "creator": "AccelByte",
     "repositories": [
       {
         "title": "Extend Challenge Suite",
-        "description": "This is utility repo for running and testing the Extend Challenge apps",
+        "description": "A comprehensive utility repository providing essential tools and configurations for running, testing, and managing the Extend Challenge applications within your development environment.",
         "url": "https://github.com/AccelByte/extend-challenge-suite",
         "language": "Shell"
       },
       {
         "title": "Extend Challenge Common",
-        "description": "Shared library (domain models, interfaces)",
+        "description": "A foundational shared library containing critical domain models and interfaces, ensuring consistency and interoperability across all components of the Extend Challenge Suite.",
         "url": "https://github.com/AccelByte/extend-challenge-common",
         "language": "Go",
         "type": "event-handler"
       },
       {
         "title": "Extend Challenge Service",
-        "description": "REST API service (gRPC + HTTP Gateway)",
+        "description": "The core REST API service for the Challenge Suite, featuring gRPC and HTTP Gateway implementations to handle all challenge-related requests, event triggers, and data management.",
         "url": "https://github.com/AccelByte/extend-challenge-service",
         "language": "Go",
         "type": "event-handler"
       },
       {
         "title": "Extend Challenge Event Handler",
-        "description": "Event processing service (gRPC)",
+        "description": "A dedicated event processing service built with gRPC, efficiently managing and responding to game events to trigger challenge progress, status updates, and reward disbursements.",
         "url": "https://github.com/AccelByte/extend-challenge-event-handler",
         "language": "Go",
         "type": "event-handler"
       },
       {
         "title": "Extend Challenge Demo App",
-        "description": "Demo CLI/TUI tool for testing",
+        "description": "A practical command-line interface (CLI) and text-based user interface (TUI) tool designed for demonstrating and rigorously testing the functionalities of the Extend Challenge Suite.",
         "url": "https://github.com/AccelByte/extend-challenge-demo-app",
         "language": "Go",
         "type": "event-handler"
@@ -118,12 +118,12 @@
     "id": "446b70c7a0dc454597043455585add36",
     "imageUrl": "/extend-apps-explorer/ggwp.png",
     "title": "Profanity Filter",
-    "description": "Profanity filter to check if a message contains blacklisted words",
+    "description": "Maintain a positive and respectful in-game environment with the Profanity Filter. This essential tool efficiently scans and identifies messages containing blacklisted words, helping to moderate content and enhance player experience by curbing offensive language.",
     "creator": "GGWP",
     "repositories": [
       {
         "title": "Profanity Filter",
-        "description": "Profanity filter to check if a message contains blacklisted words",
+        "description": "A Profanity Filter service, implemented in Go, designed to efficiently detect and flag messages containing blacklisted words, ensuring a clean and respectful communication environment within your game.",
         "url": "https://github.com/AccelByte/profanity-filter-go",
         "language": "Go"
       }
@@ -133,12 +133,12 @@
     "id": "03ec7ab3901c459e9d6707fe664c746c",
     "imageUrl": "/extend-apps-explorer/mmr_calculator.svg",
     "title": "MMR Calculator",
-    "description": "MMR Calculator processes match results and updates player MMR based on team performance, taking into account team composition and underdog scenarios. The service integrates with AccelByte's Statistics service for MMR persistence",
+    "description": "Evaluate and update player skill ratings with the MMR Calculator. This service processes match results, intelligently adjusting player MMR based on nuanced factors like team performance, composition, and underdog dynamics. Integrated with AccelByte's Statistics service, it ensures robust MMR persistence and accurate player progression tracking.",
     "creator": "AccelByte",
     "repositories": [
       {
         "title": "Extend MMR Calculator",
-        "description": "Extend Service Extension sample app that can calculate player MMR changes given simple match result.",
+        "description": "A prime example of an Extend Service Extension, this sample application demonstrates how to accurately calculate and apply player MMR changes derived from straightforward match results, integrating seamlessly with AccelByte Gaming Services.",
         "url": "https://github.com/AccelByte/extend-mmr-calculator",
         "language": "Go",
         "type": "service-extension"
@@ -149,21 +149,37 @@
     "id": "1da1dd170193489f8fc4d15158847087",
     "imageUrl": "/extend-apps-explorer/gacha_suite.svg",
     "title": "Gacha Suite",
-    "description": "Alphabet Gacha implements game logic including idle earnings, upgrade purchases, gacha mechanics, and prestige system. The service integrates with AccelByte Gaming Services (AGS) for wallet management, cloud save, and player statistics.",
+    "description": "Unleash engaging monetization and progression with the Gacha Suite. The Alphabet Gacha example within this suite showcases comprehensive game logic, including idle earnings, strategic upgrade purchases, captivating gacha mechanics, and a rewarding prestige system. This service integrates with AccelByte Gaming Services (AGS) for robust wallet management, secure cloud saves, and detailed player statistics, providing a complete solution for modern idle-gacha experiences.",
     "creator": "AccelByte",
     "repositories": [
       {
         "title": "Alphabet Gacha Extend Service",
-        "description": "Extend Service Extension app that acts as a game backend for idle + gacha game.",
+        "description": "The backend Extend Service Extension for the Alphabet Gacha game, implementing core idle earnings, upgrade, gacha, and prestige system logic, fully integrated with AccelByte Gaming Services.",
         "url": "https://github.com/AccelByte/extend-alphabet-gacha-server",
         "language": "Go",
         "type": "service-extension"
       },
       {
         "title": "Alphabet Gacha Extend Service",
-        "description": "Game client for Alphabet Gacha Extend Service",
+        "description": "The companion game client for the Alphabet Gacha Extend Service, providing the frontend experience for players interacting with the idle earnings, upgrades, gacha, and prestige systems.",
         "url": "https://github.com/AccelByte/extend-alphabet-gacha-server",
         "language": "TypeScript"
+      }
+    ]
+  },
+  {
+    "id": "02bf2498ee5b49ee9a088db3835d0eeb",
+    "imageUrl": "/extend-apps-explorer/event_handler.svg",
+    "title": "EOS Voice Integration",
+    "description": "Facilitate seamless in-game voice communication with EOS Voice Integration. This Extend Event Handler mirrors AccelByte Session Service state into Epic Online Services (EOS) real-time voice rooms. By subscribing to session and party change events via Kafka Connect, it ensures room membership remains perfectly synchronized and delivers user-specific credentials through AccelByte Lobby notifications, enabling game clients to effortlessly join the appropriate EOS voice channels.",
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "Extend EOS Voice Integration",
+        "description": "An Extend Event Handler that automates the creation of Epic Online Services (EOS) Voice rooms, synchronizing them with AccelByte Session Service whenever a new Party or Game Session is initiated.",
+        "url": "https://github.com/AccelByte/extend-eos-voice-rtc",
+        "language": "Go",
+        "type": "event-handler"
       }
     ]
   }
