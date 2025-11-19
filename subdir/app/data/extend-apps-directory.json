@@ -1,7 +1,7 @@
 [
   {
     "id": "f88c8043680b49538764f2cca4bf7a27",
-    "imageUrl": "/vivox.png",
+    "imageUrl": "/extend-apps-explorer/vivox.png",
     "title": "Vivox Authorization Service",
     "description": "A Vivox authentication service is essential for integrating AccelByte Gaming Services (AGS), Vivox, and game clients. It generates the signed Vivox token that game clients need to interact with Vivox. This token is valid for 90 seconds, so game clients must regularly call the service to obtain a new token.",
     "creator": "AccelByte",
@@ -38,7 +38,7 @@
   },
   {
     "id": "f680a8a5badb485490dfb91e6fee1f07",
-    "imageUrl": "/rank_suite.svg",
+    "imageUrl": "/extend-apps-explorer/rank_suite.svg",
     "title": "Rank Suite",
     "description": "A comprehensive tiered weekly player ranking system for AccelByte Gaming Services (AGS) that manages MMR-based player rankings with real-time updates and weekly evaluations.",
     "creator": "AccelByte",
@@ -57,7 +57,7 @@
   },
   {
     "id": "b8c86f553cb048198857a4b9ffb3baa5",
-    "imageUrl": "/core_matchmaker.svg",
+    "imageUrl": "/extend-apps-explorer/core_matchmaker.svg",
     "title": "Core Matchmaker",
     "description": "Extend Override app designed to customize the matchmaking function. It includes a gRPC server implementation with built-in security (authentication/authorization), observability (metrics, traces, logs), and a sample implementation for matching two players.",
     "creator": "AccelByte",
@@ -73,7 +73,7 @@
   },
   {
     "id": "597959727676439385b0cc49f8ca1e86",
-    "imageUrl": "/challenge_suite.svg",
+    "imageUrl": "/extend-apps-explorer/challenge_suite.svg",
     "title": "Challenge Suite",
     "description": "The Challenge Suite enables game developers to implement daily missions, seasonal events, quests, and achievements through simple JSON configuration - no custom backend code required. The system integrates seamlessly with AccelByte Gaming Services (AGS) for authentication, event processing, and reward distribution.",
     "creator": "AccelByte",
@@ -116,7 +116,7 @@
   },
   {
     "id": "446b70c7a0dc454597043455585add36",
-    "imageUrl": "/ggwp.png",
+    "imageUrl": "/extend-apps-explorer/ggwp.png",
     "title": "Profanity Filter",
     "description": "Profanity filter to check if a message contains blacklisted words",
     "creator": "GGWP",
@@ -131,7 +131,7 @@
   },
   {
     "id": "03ec7ab3901c459e9d6707fe664c746c",
-    "imageUrl": "/mmr_calculator.svg",
+    "imageUrl": "/extend-apps-explorer/mmr_calculator.svg",
     "title": "MMR Calculator",
     "description": "MMR Calculator processes match results and updates player MMR based on team performance, taking into account team composition and underdog scenarios. The service integrates with AccelByte's Statistics service for MMR persistence",
     "creator": "AccelByte",
@@ -147,7 +147,7 @@
   },
   {
     "id": "1da1dd170193489f8fc4d15158847087",
-    "imageUrl": "/gacha_suite.svg",
+    "imageUrl": "/extend-apps-explorer/gacha_suite.svg",
     "title": "Gacha Suite",
     "description": "Alphabet Gacha implements game logic including idle earnings, upgrade purchases, gacha mechanics, and prestige system. The service integrates with AccelByte Gaming Services (AGS) for wallet management, cloud save, and player statistics.",
     "creator": "AccelByte",
