@@ -150,37 +150,13 @@
     "imageUrl": "/extend-apps-explorer/gacha_suite.png",
     "title": "Gacha Suite",
     "description": "Backend logic for an idle-gacha game, including earnings, upgrades, gacha rolls, and prestige. Integrated with AGS wallet, stats, and cloud save.",
-    "creator": "AccelByte",
-    "repositories": [
-      {
-        "title": "Alphabet Gacha Extend Service",
-        "description": "Go backend for the example idle-gacha game.",
-        "url": "https://github.com/AccelByte/extend-alphabet-gacha-server",
-        "language": "Go",
-        "type": "service-extension"
-      },
-      {
-        "title": "Alphabet Gacha Client",
-        "description": "TypeScript game client for the Alphabet Gacha backend.",
-        "url": "https://github.com/AccelByte/extend-alphabet-gacha-client",
-        "language": "TypeScript"
-      }
-    ]
+    "creator": "AccelByte"
   },
   {
     "id": "02bf2498ee5b49ee9a088db3835d0eeb",
     "imageUrl": "/extend-apps-explorer/eos_voice_integration.png",
     "title": "EOS Voice Integration",
     "description": "Keeps EOS Voice rooms in sync with AGS session and party state, and sends RTC credentials to clients through Lobby notifications.",
-    "creator": "AccelByte",
-    "repositories": [
-      {
-        "title": "Extend EOS Voice Integration",
-        "description": "Go event handler that creates and updates EOS Voice rooms based on session and party events.",
-        "url": "https://github.com/AccelByte/extend-eos-voice-rtc",
-        "language": "Go",
-        "type": "event-handler"
-      }
-    ]
+    "creator": "AccelByte"
   }
 ]
