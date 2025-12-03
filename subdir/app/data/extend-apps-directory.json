@@ -45,13 +45,30 @@
     "repositories": [
       {
         "title": "Extend Rank Suite",
-        "description": "Go implementation of the core ranking services, including MMR updates, ranking logic, and weekly rollovers.",
+        "description": "Parent project of the ranking services, contains git submodules of the API, Manager, and Event Listener.",
         "url": "https://github.com/accelbyte/extend-rank-suite",
-        "language": "Shell",
-        "appRecommendedResource": {
-          "cpu": "1000 milicores",
-          "memory": "100 MB"
-        }
+        "language": "Shell"
+      },
+      {
+        "title": "Extend Rank API",
+        "description": "Backend service providing REST API endpoints for admin and game clients.",
+        "url": "https://github.com/AccelByte/extend-rank-api",
+        "language": "Go",
+        "type": "service-extension"
+      },
+      {
+        "title": "Extend Rank Manager",
+        "description": "Orchestrator and the main logic of the Rank Suite. Contains schedulers and managers.",
+        "url": "https://github.com/AccelByte/extend-rank-manager",
+        "language": "Go",
+        "type": "service-extension"
+      },
+      {
+        "title": "Extend Rank Stats Listener",
+        "description": "Event handler app that receives and processes AGS Statistics events.",
+        "url": "https://github.com/AccelByte/extend-rank-stats-listener",
+        "language": "Go",
+        "type": "event-handler"
       }
     ]
   },
@@ -80,7 +97,7 @@
     "repositories": [
       {
         "title": "Extend Challenge Suite",
-        "description": "Tooling and scripts to run and test the Challenge Suite locally.",
+        "description": "Parent project for all the Extend Challenge apps, contains tooling and scripts to run and test the Challenge Suite locally.",
         "url": "https://github.com/AccelByte/extend-challenge-suite",
         "language": "Shell"
       },
@@ -89,14 +106,13 @@
         "description": "Shared Go models and interfaces used across Challenge Suite components.",
         "url": "https://github.com/AccelByte/extend-challenge-common",
         "language": "Go",
-        "type": "event-handler"
       },
       {
         "title": "Extend Challenge Service",
         "description": "Go REST and gRPC service for challenge definitions, progress tracking, and event handling.",
         "url": "https://github.com/AccelByte/extend-challenge-service",
         "language": "Go",
-        "type": "event-handler"
+        "type": "service-extension"
       },
       {
         "title": "Extend Challenge Event Handler",
@@ -110,7 +126,6 @@
         "description": "CLI/TUI demo for testing and showcasing the Challenge Suite.",
         "url": "https://github.com/AccelByte/extend-challenge-demo-app",
         "language": "Go",
-        "type": "event-handler"
       }
     ]
   },
@@ -134,8 +149,24 @@
     "id": "1da1dd170193489f8fc4d15158847087",
     "imageUrl": "/extend-apps-explorer/gacha_suite.png",
     "title": "Gacha Suite",
-    "description": "Backend logic for an idle-gacha game, including earnings, upgrades, gacha rolls, and prestige. Integrated with AGS wallet, stats, and cloud save.",
-    "creator": "AccelByte"
+    "description": "Backend and Frontend example for an idle-gacha game, including earnings, upgrades, gacha rolls, and prestige. Integrated with AGS wallet, stats, and cloud save.",
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "Extend Alphabet Gacha Server",
+        "description": "Go backend for a sample alphabet-themed idle-gacha game. Integrated with AGS wallet, stats, and cloud save",
+        "url": "https://github.com/AccelByte/extend-alphabet-gacha-server",
+        "language": "Go",
+        "type": "service-extension"
+      },
+      {
+        "title": "Extend Alphabet Gacha Client",
+        "description": "Game client for a sample alphabet-themed idle-gacha game. A web app built using Phaser.js",
+        "url": "https://github.com/AccelByte/extend-alphabet-gacha-client",
+        "language": "Go",
+        "type": "service-extension"
+      }
+    ]
   },
   {
     "id": "02bf2498ee5b49ee9a088db3835d0eeb",
