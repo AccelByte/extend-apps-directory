@@ -1,7 +1,7 @@
 [
   {
     "id": "f88c8043680b49538764f2cca4bf7a27",
-    "imageUrl": "/extend-apps-explorer/vivox.png",
+    "imageUrl": "/extend-apps-directory/vivox.png",
     "title": "Vivox Authorization Service",
     "description": "Integrate Vivox voice chat into your game with the Vivox Authorization Service. This service issues short-lived Vivox tokens through AGS, making it easy to securely connect your clients to Vivox voice.",
     "creator": "AccelByte",
@@ -38,7 +38,7 @@
   },
   {
     "id": "f680a8a5badb485490dfb91e6fee1f07",
-    "imageUrl": "/extend-apps-explorer/rank_suite.png",
+    "imageUrl": "/extend-apps-directory/rank_suite.png",
     "title": "Rank Suite",
     "description": "A weekly MMR-based ranking system for AGS that keeps player standings up to date and resets them on a fixed schedule.",
     "creator": "AccelByte",
@@ -75,7 +75,7 @@
   },
   {
     "id": "b8c86f553cb048198857a4b9ffb3baa5",
-    "imageUrl": "/extend-apps-explorer/core_matchmaker.png",
+    "imageUrl": "/extend-apps-directory/core_matchmaker.png",
     "title": "Core Matchmaker",
     "description": "A customizable matchmaking service that exposes a secure gRPC endpoint with observability built in, including a simple two-player match example.",
     "creator": "AccelByte",
@@ -91,7 +91,7 @@
   },
   {
     "id": "597959727676439385b0cc49f8ca1e86",
-    "imageUrl": "/extend-apps-explorer/challenge_suite.png",
+    "imageUrl": "/extend-apps-directory/challenge_suite.png",
     "title": "Challenge Suite",
     "description": "A configurable system for daily missions, quests, achievements, and seasonal events. Uses JSON configs and AGS services to track progress and deliver rewards.",
     "creator": "AccelByte",
@@ -133,7 +133,7 @@
   },
   {
     "id": "03ec7ab3901c459e9d6707fe664c746c",
-    "imageUrl": "/extend-apps-explorer/mmr_calculator.png",
+    "imageUrl": "/extend-apps-directory/mmr_calculator.png",
     "title": "MMR Calculator",
     "description": "A service that adjusts player MMR based on match results and writes changes to AGS Statistics.",
     "creator": "AccelByte",
@@ -149,7 +149,7 @@
   },
   {
     "id": "1da1dd170193489f8fc4d15158847087",
-    "imageUrl": "/extend-apps-explorer/gacha_suite.png",
+    "imageUrl": "/extend-apps-directory/gacha_suite.png",
     "title": "Gacha Suite",
     "description": "Backend and Frontend example for an idle-gacha game, including earnings, upgrades, gacha rolls, and prestige. Integrated with AGS wallet, stats, and cloud save.",
     "creator": "AccelByte",
@@ -172,7 +172,7 @@
   },
   {
     "id": "02bf2498ee5b49ee9a088db3835d0eeb",
-    "imageUrl": "/extend-apps-explorer/eos_voice_integration.png",
+    "imageUrl": "/extend-apps-directory/eos_voice_integration.png",
     "title": "EOS Voice Integration",
     "description": "Keeps EOS Voice rooms in sync with AGS session and party state, and sends RTC credentials to clients through Lobby notifications.",
     "creator": "AccelByte",
@@ -188,14 +188,14 @@
   },
   {
     "id": "5a1888126521453893d95939770cd8f3",
-    "imageUrl": "/extend-apps-explorer/eos_easy_anti_cheat.png",
+    "imageUrl": "/extend-apps-directory/eos_easy_anti_cheat.png",
     "title": "EOS Easy Anti-Cheat",
     "description": "Authenticates and evaluates EAC signals, maps them to your enforcement policies, and triggers actions such as bans, reports, or telemetry updates through AccelByte services.",
     "creator": "AccelByte"
   },
   {
     "id": "6401dda7b50643809ec4dcff96abe901",
-    "imageUrl": "/extend-apps-explorer/tournament_system.png",
+    "imageUrl": "/extend-apps-directory/tournament_system.png",
     "title": "Tournament System",
     "description": "Set up tournament, invite players, and track scores all in one place, making it simple to organize exciting gaming events.",
     "creator": "AccelByte"

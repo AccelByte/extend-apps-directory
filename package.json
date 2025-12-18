@@ -1,6 +1,6 @@
 {
   "name": "extend-apps-directory",
-  "homepage": "https://accelbyte.github.io/extend-apps-explorer",
+  "homepage": "https://accelbyte.github.io/extend-apps-directory",
   "private": true,
   "type": "module",
   "scripts": {

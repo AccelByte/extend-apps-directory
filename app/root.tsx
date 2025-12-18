@@ -23,7 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/extend-apps-explorer/favicon.ico" type="image/x-icon"></link>
+        <link rel="icon" href="/extend-apps-directory/favicon.ico" type="image/x-icon"></link>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YFJLYS11JL"></script>
         <script>
           {`
