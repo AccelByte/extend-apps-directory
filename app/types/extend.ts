@@ -13,6 +13,10 @@ export enum FilterDevelopedBy {
   External = 'External'
 }
 
+export enum ExternalInfo {
+  ExcludeAccelByte = 'exclude AccelByte'
+}
+
 export enum RepositoryType {
   ServiceExtension = 'service-extension',
   EventHandler = 'event-handler',

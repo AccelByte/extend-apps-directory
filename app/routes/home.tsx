@@ -4,7 +4,7 @@ import { ExtendDirectoryDetailModal } from '~/components/ExtendDirectoryDetailMo
 import accelByteLogo from '../assets/accelbyte.svg'
 import { ExtendDirectoryItems } from '../components/ExtendDirectoryItems'
 import extendAppsJson from '../data/extend-apps-directory.json'
-import { type ExtendDirectoryAppInfo, FilterDevelopedBy } from '../types/extend'
+import { type ExtendDirectoryAppInfo, ExternalInfo, FilterDevelopedBy } from '../types/extend'
 import styles from './home.module.css'
 
 const { Title, Text } = Typography
@@ -16,10 +16,16 @@ export function meta() {
   ]
 }
 
+const ExternalLabel = () => (
+  <div className="d-flex align-items-center">
+    {FilterDevelopedBy.External} <span style={{ opacity: 0.45, marginLeft: 4 }}>({ExternalInfo.ExcludeAccelByte})</span>
+  </div>
+)
+
 const DEVELOPED_BY_OPTIONS = [
   { label: FilterDevelopedBy.All, value: FilterDevelopedBy.All },
   { label: FilterDevelopedBy.AccelByte, value: FilterDevelopedBy.AccelByte },
-  { label: FilterDevelopedBy.External, value: FilterDevelopedBy.External }
+  { label: <ExternalLabel />, value: FilterDevelopedBy.External }
 ]
 
 export default function Home() {
@@ -58,15 +64,15 @@ export default function Home() {
             </Title>
             <Text className={styles.title}>Enhance your games with powerful Extend apps crafted by our community.</Text>
           </div>
-          {/* Temporarily hidden because currently all extend app templates are developed by AB */}
-          {/* <div>
+          <div>
             <Select
               prefix="Developed by:"
+              style={{ width: 229 }}
               value={developedBy || FilterDevelopedBy.All}
               onChange={handleDevelopedByChange}
               options={DEVELOPED_BY_OPTIONS}
             />
-          </div> */}
+          </div>
           <ExtendDirectoryItems data={extendApps as ExtendDirectoryAppInfo[]} />
         </div>
       </main>
