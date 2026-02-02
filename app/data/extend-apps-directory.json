@@ -191,7 +191,32 @@
     "imageUrl": "/extend-apps-directory/eos_easy_anti_cheat.png",
     "title": "EOS Easy Anti-Cheat",
     "description": "Authenticates and evaluates EAC signals, maps them to your enforcement policies, and triggers actions such as bans, reports, or telemetry updates through AccelByte services.",
-    "creator": "AccelByte"
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "Extend EOS Easy Anti-Cheat",
+        "description": "Anti-cheat solution that prevents and detects cheating in online games.",
+        "url": "https://github.com/AccelByte/extend-eac-policy",
+        "language": "Go",
+        "type": "service-extension"
+      }
+    ]
+  },
+  {
+    "id": "24ff25f8e6874de682a0695c05c133be",
+    "imageUrl": "/extend-apps-directory/service_moderation.png",
+    "title": "Moderation Service",
+    "description": "Moderate your chat with Tisane API. Flag insults, profanities, threats, harassment, PII leaks, and more in multiple languages.",
+    "creator": "Tisane Labs",
+    "repositories": [
+      {
+        "title": "Moderation Service",
+        "description": "App that listens to personal chat events from AccelByte and automatically analyzes message content using Tisane's API to detect problematic content, sentiment, entities, and more.",
+        "url": "https://github.com/tisanelabs/accelbyte-extend-tisane-plugin",
+        "language": "C#",
+        "type": "event-handler"
+      }
+    ]
   },
   {
     "id": "6401dda7b50643809ec4dcff96abe901",
