@@ -222,7 +222,16 @@
     "id": "6401dda7b50643809ec4dcff96abe901",
     "imageUrl": "/extend-apps-directory/tournament_system.png",
     "title": "Tournament System",
-    "description": "Set up tournament, invite players, and track scores all in one place, making it simple to organize exciting gaming events.",
+    "description": "Set up tournament and invite players all in one place, making it simple to organize exciting gaming events.",
     "creator": "AccelByte"
+    "repositories": [
+      {
+        "title": "Tournament System",
+        "description": "A tournament management solution that handles single-elimination brackets with automatic bracket generation, winner advancement, and real-time status tracking.",
+        "url": "https://github.com/AccelByte/extend-tournament-system",
+        "language": "Go",
+        "type": "service-extension"
+      }
+    ]
   }
 ]
