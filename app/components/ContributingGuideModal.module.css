@@ -1,0 +1,77 @@
+.modal {
+  max-width: 100%;
+
+  :global(.ant-modal-close) {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 640px !important;
+  }
+}
+
+.modalHeader {
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.modalTitle {
+  margin: 0px !important;
+}
+
+.modalContent {
+  padding: 24px;
+}
+
+.instructionsList {
+  margin: 0;
+  padding-left: 20px;
+  color: #000000a6;
+}
+
+.instructionsList li {
+  margin-bottom: 0;
+  line-height: 32px;
+}
+
+.instructionsList ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.instructionsList ol li {
+  line-height: 32px;
+}
+
+.instructionsList a {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  :global(.ant-modal),
+  :global(.ant-modal-content) {
+    height: 100%;
+    width: 100vw;
+    margin: 0px !important;
+    top: 0px;
+  }
+
+  :global(.ant-modal-content) {
+    border-radius: 0px !important;
+  }
+
+  :global(.ant-modal-body) {
+    height: 100%;
+  }
+
+  .modalTitle {
+    font-size: 20px !important;
+  }
+
+  .modalContent {
+    min-height: 100vh;
+  }
+}

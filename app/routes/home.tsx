@@ -1,5 +1,6 @@
 import { Select, Typography } from 'antd'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
+import { ContributingGuideModal } from '~/components/ContributingGuideModal'
 import { ExtendDirectoryDetailModal } from '~/components/ExtendDirectoryDetailModal'
 import accelByteLogo from '../assets/accelbyte.svg'
 import { ExtendDirectoryItems } from '../components/ExtendDirectoryItems'
@@ -51,6 +52,12 @@ export default function Home() {
     setSearchParams(searchParams)
   }
 
+  const handleContributingLinkClick = () => {
+    const newSearchParams = new URLSearchParams(searchParams)
+    newSearchParams.set('show-contributing-guide-modal', 'true')
+    setSearchParams(newSearchParams, { preventScrollReset: true })
+  }
+
   return (
     <>
       <header className={styles.header}>
@@ -62,7 +69,13 @@ export default function Home() {
             <Title className={styles.title} level={3}>
               Extend Apps Directory
             </Title>
-            <Text className={styles.title}>Enhance your games with powerful Extend apps crafted by our community.</Text>
+            <Text className={styles.title}>
+              Power up your game with community-built Extend apps. Have an app to share?{' '}
+              <Link to="?show-contributing-guide-modal=true" onClick={handleContributingLinkClick} className={styles.contributingLink}>
+                Learn how to build and submit an app
+              </Link>
+              .
+            </Text>
           </div>
           <div>
             <Select
@@ -77,6 +90,7 @@ export default function Home() {
         </div>
       </main>
       <ExtendDirectoryDetailModal />
+      <ContributingGuideModal />
     </>
   )
 }
