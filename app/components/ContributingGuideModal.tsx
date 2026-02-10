@@ -1,4 +1,4 @@
-import { CloseOutlined, InfoCircleFilled, VideoCameraFilled } from '@ant-design/icons'
+import { CloseOutlined, VideoCameraFilled } from '@ant-design/icons'
 import { Alert, Button, Modal, Typography } from 'antd'
 import { useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
@@ -107,7 +107,7 @@ export function ContributingGuideModal() {
           </div>
           <Alert
             type="info"
-            icon={<InfoCircleFilled />}
+            icon={<VideoCameraFilled />}
             message={
               <div className="d-flex align-items-center justify-content-between" style={{ gap: 8 }}>
                 <Text>Build your first Extend app in minutes using AI.</Text>
@@ -117,7 +117,6 @@ export function ContributingGuideModal() {
                   href={LINKS.VIDEO}
                   target="_blank"
                   rel="noopener noreferrer"
-                  icon={<VideoCameraFilled />}
                 >
                   Watch video <ExternalLink />
                 </Button>
