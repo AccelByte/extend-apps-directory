@@ -2,8 +2,6 @@ name: Validate Extend Apps Directory
 
 on:
   pull_request:
-    paths:
-      - 'app/data/extend-apps-directory.json'
 
 jobs:
   validate:
@@ -25,3 +23,6 @@ jobs:
 
       - name: Run prebuild script
         run: yarn prebuild
+      
+      - name: Build
+        run: yarn build
