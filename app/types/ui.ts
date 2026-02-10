@@ -1,0 +1,1 @@
+export const CONTRIBUTING_GUIDELINE_MODAL_QUERY_PARAMETER = 'showContributingGuideModal'

@@ -10,3 +10,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .yarn/install-state.gz
+
+.claude/settings.local.json
+.claude/plans
+.claude/raw-plans

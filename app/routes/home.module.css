@@ -14,3 +14,13 @@
 .title {
   color: #000000e0;
 }
+
+.contributingLink {
+  color: #0b6cff;
+  text-decoration: underline;
+}
+
+.contributingLink:hover {
+  color: #0b6cff;
+  text-decoration: underline;
+}
