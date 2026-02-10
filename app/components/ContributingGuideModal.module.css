@@ -1,9 +1,5 @@
 .modal {
   max-width: 100%;
-
-  :global(.ant-modal-close) {
-    display: none;
-  }
 }
 
 @media (min-width: 768px) {
