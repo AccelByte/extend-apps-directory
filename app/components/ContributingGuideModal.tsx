@@ -17,28 +17,26 @@ const LINKS = {
 
 export function ContributingGuideModal() {
   const [searchParams, setSearchParams] = useSearchParams()
-  const showModal = searchParams.get('show-contributing-guide-modal') === 'true'
+  const isModalOpen = searchParams.get('show-contributing-guide-modal') === 'true'
 
   useEffect(() => {
     // Track modal view with Google Analytics
-    if (showModal && window.gtag) {
+    if (isModalOpen && window.gtag) {
       window.gtag('event', 'view_contributing_guide', {
         event_category: 'engagement',
         event_label: 'Contributing Guide Modal Opened'
       })
     }
-  }, [showModal])
+  }, [isModalOpen])
 
   const handleClose = () => {
     searchParams.delete('show-contributing-guide-modal')
     setSearchParams(searchParams, { preventScrollReset: true })
   }
 
-  if (!showModal) return null
-
   return (
     <Modal
-      open
+      open={isModalOpen}
       className={styles.modal}
       styles={{ content: { padding: 0 } }}
       okButtonProps={{ hidden: true }}
