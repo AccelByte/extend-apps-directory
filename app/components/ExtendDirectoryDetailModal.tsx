@@ -1,11 +1,10 @@
-import { CloseOutlined } from '@ant-design/icons'
+import { CloseOutlined, ExportOutlined } from '@ant-design/icons'
 import { Badge, Button, Card, Modal, Tag, Typography } from 'antd'
 import { useSearchParams } from 'react-router-dom'
 import type { ExtendDirectoryAppInfo, RepositoryInfo } from '~/types/extend'
 import { Language, mapLanguageToColor, mapRepositoryTypeToText } from '~/types/extend'
 import extendApps from '../data/extend-apps-directory.json'
 import styles from './ExtendDirectoryDetailModal.module.css'
-import { ExternalLink } from './ExternalLink'
 import type { ReactNode } from 'react'
 
 const { Title, Text, Paragraph } = Typography
@@ -43,7 +42,7 @@ const Repository = ({ index: isIndexRepository, title, description, url, languag
         <div className={styles.repositoryDetails}>{elements}</div>
       </div>
       <Button href={url} target="_blank">
-        View <ExternalLink />
+        View <ExportOutlined aria-hidden />
       </Button>
     </Card>
   )

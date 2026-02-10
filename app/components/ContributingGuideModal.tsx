@@ -1,9 +1,9 @@
-import { CloseOutlined, VideoCameraFilled } from '@ant-design/icons'
+import { CloseOutlined, ExportOutlined, VideoCameraFilled } from '@ant-design/icons'
 import { Alert, Button, Modal, Typography } from 'antd'
 import { useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { ExternalLink } from './ExternalLink'
 import styles from './ContributingGuideModal.module.css'
+import { CONTRIBUTING_GUIDELINE_MODAL_QUERY_PARAMETER } from '~/types/ui'
 
 const { Title, Paragraph, Text } = Typography
 
@@ -17,7 +17,7 @@ const LINKS = {
 
 export function ContributingGuideModal() {
   const [searchParams, setSearchParams] = useSearchParams()
-  const isModalOpen = searchParams.get('show-contributing-guide-modal') === 'true'
+  const isModalOpen = searchParams.get(CONTRIBUTING_GUIDELINE_MODAL_QUERY_PARAMETER) === 'true'
 
   useEffect(() => {
     // Track modal view with Google Analytics
@@ -30,7 +30,7 @@ export function ContributingGuideModal() {
   }, [isModalOpen])
 
   const handleClose = () => {
-    searchParams.delete('show-contributing-guide-modal')
+    searchParams.delete(CONTRIBUTING_GUIDELINE_MODAL_QUERY_PARAMETER)
     setSearchParams(searchParams, { preventScrollReset: true })
   }
 
@@ -50,7 +50,7 @@ export function ContributingGuideModal() {
           Submit your app
         </Title>
         <Button style={{ width: 32, height: 32 }} onClick={handleClose}>
-          <CloseOutlined />
+          <CloseOutlined aria-label="Close modal" />
         </Button>
       </div>
       <div className={styles.modalContent}>
@@ -116,7 +116,7 @@ export function ContributingGuideModal() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Watch video <ExternalLink />
+                  Watch video <ExportOutlined aria-hidden />
                 </Button>
               </div>
             }

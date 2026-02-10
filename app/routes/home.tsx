@@ -7,6 +7,7 @@ import { ExtendDirectoryItems } from '../components/ExtendDirectoryItems'
 import extendAppsJson from '../data/extend-apps-directory.json'
 import { type ExtendDirectoryAppInfo, ExternalInfo, FilterDevelopedBy } from '../types/extend'
 import styles from './home.module.css'
+import { CONTRIBUTING_GUIDELINE_MODAL_QUERY_PARAMETER } from '~/types/ui'
 
 const { Title, Text } = Typography
 
@@ -35,7 +36,7 @@ export default function Home() {
 
   const extendApps =
     developedBy && developedBy !== FilterDevelopedBy.All
-      ? extendAppsJson.filter((e) => {
+      ? extendAppsJson.filter(e => {
           if (developedBy === FilterDevelopedBy.External) {
             return e.creator !== FilterDevelopedBy.AccelByte
           }
@@ -52,12 +53,6 @@ export default function Home() {
     setSearchParams(searchParams)
   }
 
-  const handleContributingLinkClick = () => {
-    const newSearchParams = new URLSearchParams(searchParams)
-    newSearchParams.set('show-contributing-guide-modal', 'true')
-    setSearchParams(newSearchParams, { preventScrollReset: true })
-  }
-
   return (
     <>
       <header className={styles.header}>
@@ -71,7 +66,7 @@ export default function Home() {
             </Title>
             <Text className={styles.title}>
               Power up your game with community-built Extend apps. Have an app to share?{' '}
-              <Link to="?show-contributing-guide-modal=true" onClick={handleContributingLinkClick} className={styles.contributingLink}>
+              <Link to={`?${CONTRIBUTING_GUIDELINE_MODAL_QUERY_PARAMETER}=true`} className={styles.contributingLink}>
                 Learn how to build and submit an app
               </Link>
               .

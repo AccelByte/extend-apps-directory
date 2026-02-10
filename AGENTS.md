@@ -17,12 +17,12 @@ Always start with `yarn` in the root project to install the dependencies before 
 - For styling, follow these order:
   - If possible to be styled built-in with Ant Design, use it.
   - If the Ant Design style can't be overridden with Bootstrap class, then create a `*.module.css` file CLOSE TO THE component that uses it (in the same folder as the component). Sometimes it needs `!important` to override Ant Design styles, only use it when it can't be overridden in a "normal way" (e.g. using higher CSS selector specificity).
-- We are using `msw` for mocking requests. When creating tests, ensure that you are mocking the response using `msw` instead of mocking the request call itself.
 - When running a code snippet (command line), use the following as terminal preference:
   - Windows: Powershell 7.
-  - \*nix: Zsh.
+  - \*nix: Bash/Zsh.
 - When it comes to naming variables:
   - Make sure booleans always start with `is`, `has`, or `can`. For example: `isModalOpen`, `hasQueryParameter`, `canUpdate`.
+  - Make sure functions always start with a verb or if it returns boolean, use boolean-y name. For example: `showModal()`, `hasQueryParameter()`.
 
 ### React-specific conventions
 
@@ -36,10 +36,6 @@ if (!isOpen) return null
 <Modal open={isOpen} />
 ```
 
-## Running
-
-Run `yarn dev` from the root project. This will spin up a development server that runs in port 5173.
-
 ## Testing
 
-Run `yarn test` from the root project.
+Run `yarn prebuild && yarn typecheck` from the root project.
