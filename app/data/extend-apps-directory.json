@@ -179,7 +179,7 @@
     "repositories": [
       {
         "title": "Extend EOS Voice Integration",
-        "description": "Go event handler that creates and updates EOS Voice rooms based on session and party events.",
+        "description": "Go service extension that creates and updates EOS Voice rooms based on player session and party status.",
         "url": "https://github.com/AccelByte/extend-eos-voice-rtc",
         "language": "Go",
         "type": "service-extension"
@@ -229,6 +229,22 @@
         "title": "Tournament System",
         "description": "A tournament management solution that handles single-elimination brackets with automatic bracket generation, winner advancement, and real-time status tracking.",
         "url": "https://github.com/AccelByte/extend-tournament-system",
+        "language": "Go",
+        "type": "service-extension"
+      }
+    ]
+  },
+  {
+    "id": "7db1f18017284dc8acb84f7c88a2a39c",
+    "imageUrl": "/extend-apps-directory/discord.png",
+    "title": "Discord Integration",
+    "description": "Bring your community and game data together. This service will connects Discord with AGS for account linking, role synchronization, leaderboard post, and match creation through slash command, with an admin panel for configuration",
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "Extend Discord Integration",
+        "description": "Go service extension that connects Discord and AGS.",
+        "url": "https://github.com/AccelByte/extend-discord",
         "language": "Go",
         "type": "service-extension"
       }
