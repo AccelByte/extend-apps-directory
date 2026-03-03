@@ -77,7 +77,7 @@
     "id": "b8c86f553cb048198857a4b9ffb3baa5",
     "imageUrl": "/extend-apps-directory/core_matchmaker.png",
     "title": "Core Matchmaker",
-    "description": "A customizable matchmaking service that exposes a secure gRPC endpoint with observability built in, including a simple two-player match example.",
+    "description": "A customizable, production-grade matchmaking service designed to implement any pairing logic required, featuring built-in observability and a two-player match template.",
     "creator": "AccelByte",
     "repositories": [
       {
