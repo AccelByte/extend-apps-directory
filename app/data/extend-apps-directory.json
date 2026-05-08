@@ -1,5 +1,21 @@
 [
   {
+    "id": "1ab33f32f43a46ffc985acf8d2c8dd82",
+    "imageUrl": "/extend-apps-directory/regional_payment_gateway.png",
+    "title": "Regional Payment Gateway",
+    "description": "Bridge AccelByte Game Services (AGS) to regional payment providers (Xendit, KOMOJU, and custom providers via environment config). Supports hosted checkout, webhook fulfillment, refunds, and retry scheduling, enabling in-game purchases through payment gateways available to your players.",
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "Extend Regional Payment Gateway",
+        "description": "Go service extension that bridges AGS economy to Xendit, KOMOJU, and generic payment providers via a configurable adapter pattern.",
+        "url": "https://github.com/AccelByte/extend-regional-payment-gateway",
+        "language": "Go",
+        "type": "service-extension"
+      }
+    ]
+  },
+  {
     "id": "f88c8043680b49538764f2cca4bf7a27",
     "imageUrl": "/extend-apps-directory/vivox.png",
     "title": "Vivox Authorization Service",
