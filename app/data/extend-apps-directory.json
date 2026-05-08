@@ -249,5 +249,28 @@
         "type": "service-extension"
       }
     ]
+  },
+  {
+    "id": "a3e9c12f74b540d6b8e27a1f93d405c8",
+    "imageUrl": "/extend-apps-directory/extend-stash-service.png",
+    "title": "Extend Stash Service",
+    "description": "An item management system that acts as the single source of truth for player ownership, container placement, decorators, and lifecycle operations.",
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "Stash Service Extension",
+        "description": "Namespace-scoped REST service that owns the full stash lifecycle: enrich and container definition CRUD, sync rules, direct runtime ingest, ownership and container queries, move/consume/revoke operations, decorator mutations, and transaction log queries. The service extension operates standalone: game servers, admin tools, and any trusted caller interact with it directly.",
+        "url": "https://github.com/AccelByte/extend-stash-service",
+        "language": "Go",
+        "type": "service-extension"
+      },
+      {
+        "title": "Stash Event Handler",
+        "description": "Listens to AGS platform commerce events and translates them into Stash service ingest calls. Resolves sync rules, maps to item and decorator definitions, and issues idempotent ingest requests. When deployed, this automates the bridge between AGS platform service and the Stash data layer but is not required for the service extension to function.",
+        "url": "https://github.com/AccelByte/extend-stash-event-handler",
+        "language": "Go",
+        "type": "event-handler"
+      }
+    ]
   }
 ]
