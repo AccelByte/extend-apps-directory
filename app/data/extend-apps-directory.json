@@ -288,5 +288,21 @@
         "type": "event-handler"
       }
     ]
+  },
+  {
+    "id": "64ffbc9a92a9483794e2c13e4974ba86",
+    "imageUrl": "/extend-apps-directory/playtesthub.png",
+    "title": "PlaytestHub",
+    "description": "Run game playtests end-to-end on AGS: Discord signups, manual or capped auto-approval, NDA acceptance, distribution via AccelByte Development Toolkit (ADT) builds, Steam keys, or AGS campaigns and feedback surveys.",
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "PlaytestHub",
+        "description": "Open-source, self-hosted AccelByte Extend app for running closed game playtests. MIT-licensed.",
+        "url": "https://github.com/AccelByte/playtesthub",
+        "language": "Go",
+        "type": "service-extension"
+      }
+    ]
   }
 ]
