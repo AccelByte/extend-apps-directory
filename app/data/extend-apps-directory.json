@@ -304,5 +304,21 @@
         "type": "service-extension"
       }
     ]
+  },
+  {
+    "id": "496b771fcc284a04b1322334d7eda323",
+    "imageUrl": "/extend-apps-directory/player_hosted.png",
+    "title": "Extend Player Hosted Server",
+    "description": "Extend Override app for player-hosted servers with persistent sessions: hosts register their IP:port, the app validates and reports it to AGS, monitors heartbeats, and ends hostless or empty sessions.",
+    "creator": "AccelByte",
+    "repositories": [
+      {
+        "title": "Extend Player Hosted Server",
+        "description": "Go Extend Override app that manages player-hosted server registration, heartbeat monitoring, and session cleanup.",
+        "url": "https://github.com/AccelByte/extend-player-hosted-server",
+        "language": "Go",
+        "type": "override"
+      }
+    ]
   }
 ]
